@@ -8,22 +8,23 @@
             <title>De spectaculis</title>
             <title type="short">De spectaculis</title>
             <author>Tertullian</author>
-            <principal>WoPoss Project</principal>
+            <principal>Francesca Dell’Oro</principal>
          </titleStmt>
          <editionStmt>
-            <edition>WoPoss corpus</edition>
+            <edition>The WoPoss modality corpus</edition>
+            <funder>Swiss National Science Foundation</funder>
             <respStmt>
-               <resp>Text retrieval, preprocessing, automatic linguistic annotation and TEI
-                  conversion</resp>
+               <resp>Text retrieval, preprocessing, automatic linguistic annotation, TEI conversion
+                  and curation</resp>
                <name>Helena Bermúdez Sabel</name>
             </respStmt>
             <respStmt>
                <resp>Semantic annotation and correction of the linguistic annotation of modal
                   passages</resp>
-               <name>Séverine Rymond</name>
+               <name>Séverine Reymond</name>
             </respStmt>
             <respStmt>
-               <resp>Curation of the semantic annotation</resp>
+               <resp>Review and validation of the annotation</resp>
                <name>Francesca Dell’Oro</name>
             </respStmt>
          </editionStmt>
@@ -31,17 +32,25 @@
             <measure unit="words" quantity="6371"/>
          </extent>
          <publicationStmt>
-            <authority>Swiss National Science Foundation</authority>
+            <distributor>Institut des sciences du langage (University of Neuchâtel)</distributor>
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
                   BY-NC</licence>
             </availability>
+            <date>2022</date>
          </publicationStmt>
          <sourceDesc>
             <p>Text provided by Perseus Digital Library, with funding from The Mellon Foundation.
                Original version available for viewing and download at <ptr
-                  target="http://www.perseus.tufts.edu/hopper/"/>. Text retrieved from:
-               <bibl type="sourceEdition"><ptr target="http://data.perseus.org/texts/urn:cts:latinLit:stoa0275.stoa027"/></bibl></p>            
+                  target="http://www.perseus.tufts.edu/hopper/"/>. Text retrieved from: <bibl
+                  xml:id="sourceEdition"><ptr
+                     target="http://data.perseus.org/texts/urn:cts:latinLit:stoa0275.stoa027"
+                  /></bibl>. Original printed edition: <bibl><title>Tertullian Apology - De spectaculis - Minucius
+                     Felix Octavius</title>. Translated by T.R. Glover. William Heinemann. Harvard
+                  University Press: London; Cambridge, Massachusetts. 1931.</bibl></p>
+            <p>Reference edition: <bibl xml:id="referenceEdition">Tertullianus, Quintus Septimius
+                  Florens. <title>Les spectacles = (De spectaculis)</title>. Sources chrétiennes no
+                  332. Paris: Les Editions du Cerf. 1986.</bibl></p>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
@@ -52,6 +61,19 @@
             <person role="author" corresp="#tertullian"/>
          </particDesc>
       </profileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>The SNSF-funded project <ref target="https://woposs.unine.ch/">A world of
+                  possibilities. Modal pathways over an extra-long period of time: the diachrony of
+                  modality in the Latin language (WoPoss)</ref> (SNSF n° PP00P1_176778), led by Francesca Dell’Oro, aims at
+               reconstructing the evolution of modal meanings from the prehistory of the Latin
+               language up to the 7th century CE.</p>           
+         </projectDesc>
+         <p>The project’s repository <ref
+            target="https://github.com/WoPoss-project/annotation-schemes"
+            >annotation-schemes</ref> contains documentation about the annotation process and
+            all our customized schemas (formalised in ODD and Relax-NG).</p>
+      </encodingDesc>
    </teiHeader>
    <text>
       <body>
@@ -399,7 +421,8 @@
                         <w pos="VERB" lemma="possum" msd="#specd1e1637">posse</w>
                      </seg>
                   </supplied>
-                  <seg function="participant" type="inanimate_patient" corresp="#spec354360 #spec355008">
+                  <seg function="participant" type="inanimate_patient"
+                     corresp="#spec354360 #spec355008">
                      <w pos="PRON" lemma="qui" msd="#specd1e1667">quod</w>
                      <w pos="ADP" lemma="de">de</w>
                      <w pos="NOUN" lemma="conditio" msd="#specd1e1678">conditione</w>
@@ -414,7 +437,7 @@
                      <w pos="NOUN" lemma="cultor" msd="#specd1e1708">cultoribus</w>
                      <w pos="NOUN" lemma="Deus" msd="#specd1e1714">dei</w>
                   </seg>
-                  <w pos="VERB" lemma="puto" msd="#specd1e1720" >
+                  <w pos="VERB" lemma="puto" msd="#specd1e1720">
                      <seg function="scope" ana="#spec14058">puta</seg>
                      <seg function="marker" ana="#spec14096">ndum</seg>
                   </w>
@@ -652,7 +675,7 @@
                      <w pos="PRON" lemma="hic" msd="#specd1e2863">hoc</w>
                      <w pos="ADJ" lemma="solus" msd="#specd1e2869">solum</w>
                   </seg>
-                  <w pos="VERB" lemma="respicio" msd="#specd1e2875" >
+                  <w pos="VERB" lemma="respicio" msd="#specd1e2875">
                      <seg function="scope" next="a_quo_omnia_sint_instituta" part="Y"
                         ana="#spec23428">respicie</seg>
                      <seg ana="#spec23370" part="Y" function="marker">ndum</seg>
@@ -1707,7 +1730,7 @@
                      <w pos="ADP" lemma="penes">penes</w>
                      <w pos="ADJ" lemma="multus" msd="#specd1e8110">plures</w>
                      <w pos="PRON" lemma="noster" msd="#specd1e8116">nostrorum</w>
-                     <w pos="ADV" lemma="altius" msd="#specd1e8122">altius</w>                 
+                     <w pos="ADV" lemma="altius" msd="#specd1e8122">altius</w>
                      <w pos="CCONJ" lemma="neque">nec</w>
                      <w pos="ADV" lemma="abunde">abunde</w>
                   </seg>
@@ -3554,12 +3577,13 @@
                   <w pos="ADV" lemma="Ita">Ita</w>
                   <w pos="VERB" lemma="damno">damnatum</w>
                   <w pos="CCONJ" lemma="et">et</w>
-                  <w pos="VERB" lemma="damno" msd="#specd1e17329" >
+                  <w pos="VERB" lemma="damno" msd="#specd1e17329">
                      <seg function="scope" ana="#spec140032">damna</seg>
                      <seg function="marker" ana="#spec139974">ndum</seg>
                   </w>
                   <w pos="NOUN" lemma="opus" msd="#specd1e17340">
-                     <seg function="participant" type="inanimate_patient" corresp="#spec140032">opus</seg>
+                     <seg function="participant" type="inanimate_patient" corresp="#spec140032"
+                        >opus</seg>
                   </w>
                   <w pos="NOUN" lemma="templum">templi</w>
                   <w pos="NOUN" lemma="titulus">titulo</w>
@@ -5328,7 +5352,7 @@
                   <seg function="scope" next="consecu" part="Y" ana="#spec207385">
                      <w pos="PRON" lemma="suus" msd="#specd1e25738">suum</w>
                   </seg>
-                  <w pos="VERB" lemma="consequor" msd="#specd1e25744" >
+                  <w pos="VERB" lemma="consequor" msd="#specd1e25744">
                      <seg function="scope" ana="#spec207385" part="Y">consecu</seg>
                      <seg function="marker" ana="#spec207347" part="Y">turi</seg>
                   </w>
@@ -5941,7 +5965,7 @@
                   <w pos="VERB" lemma="sum" msd="#specd1e28353">
                      <seg function="marker" next="ndum" part="Y" ana="#spec228962">est</seg>
                   </w>
-                  <w pos="VERB" lemma="recipio" msd="#specd1e28360" >
+                  <w pos="VERB" lemma="recipio" msd="#specd1e28360">
                      <seg function="scope" ana="#spec228929" part="Y">recipie</seg>
                      <seg function="marker" part="Y" ana="#spec228962">ndum</seg>
                   </w>
@@ -7719,7 +7743,7 @@
                   </w>
                   <seg function="marker" ana="#spec354780" part="Y"><w pos="VERB" lemma="sum"
                         msd="#specd1e2643">est</w></seg>
-                  <w pos="VERB" lemma="repercutio" msd="#specd1e36749" >
+                  <w pos="VERB" lemma="repercutio" msd="#specd1e36749">
                      <seg function="scope" ana="#spec354816">repercutie</seg>
                      <seg function="marker" next="esse" part="Y" ana="#spec354798">ndum</seg>
                   </w>
@@ -8984,7 +9008,7 @@
                      <seg function="participant" type="animate_patient" corresp="#spec344715"
                         >tragoedi</seg>
                   </w>
-                  <w pos="VERB" lemma="audio" msd="#specd1e42585" >
+                  <w pos="VERB" lemma="audio" msd="#specd1e42585">
                      <seg function="scope" ana="#spec344715">audie</seg>
                      <seg function="marker" ana="#spec344753">ndi</seg>
                   </w>
@@ -9004,7 +9028,7 @@
                      <seg function="participant" type="animate_patient" corresp="#spec345392"
                         >histriones</seg>
                   </w>
-                  <w pos="VERB" lemma="cognosco" msd="#specd1e42660" >
+                  <w pos="VERB" lemma="cognosco" msd="#specd1e42660">
                      <seg function="scope" ana="#spec345392">cognosce</seg>
                      <seg function="marker" ana="#spec345354">ndi</seg>
                   </w>
@@ -9017,7 +9041,7 @@
                </s>
                <s n="497">
                   <w pos="ADV" lemma="tunc">tunc</w>
-                  <w pos="VERB" lemma="specto" msd="#specd1e42708" >
+                  <w pos="VERB" lemma="specto" msd="#specd1e42708">
                      <seg function="scope" ana="#spec345778">specta</seg>
                      <seg function="marker" ana="#spec345816">ndus</seg>
                   </w>
@@ -9038,7 +9062,7 @@
                      <seg function="participant" type="animate_patient" corresp="#spec346388"
                         >xystici</seg>
                   </w>
-                  <w pos="VERB" lemma="contemplo" msd="#specd1e42772" >
+                  <w pos="VERB" lemma="contemplo" msd="#specd1e42772">
                      <seg function="scope" ana="#spec346388">contempla</seg>
                      <seg function="marker" ana="#spec346426">ndi</seg>
                   </w>
@@ -17782,7 +17806,7 @@
             </f>
             <f name="participant">
                <symbol value="implicit"/>
-            </f>       
+            </f>
             <f name="participantType">
                <symbol value="animate_patient"/>
             </f>

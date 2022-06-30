@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/WoPoss-project/annotation-schemes/master/schemas/out/tei_woposs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="octavius">
    <teiHeader>
       <fileDesc>
@@ -8,13 +6,14 @@
             <title>Octavius</title>
             <title type="short">Octavius</title>
             <author>M. Minucius Felix</author>
-            <principal>WoPoss Project</principal>
+            <principal>Francesca Dell’Oro</principal>
          </titleStmt>
          <editionStmt>
-            <edition>WoPoss corpus</edition>
+            <edition>The WoPoss modality corpus</edition>
+            <funder>Swiss National Science Foundation</funder>
             <respStmt>
-               <resp>Text retrieval, preprocessing, automatic linguistic annotation and TEI
-                  conversion</resp>
+               <resp>Text retrieval, preprocessing, automatic linguistic annotation, TEI conversion
+                  and curation</resp>
                <name>Helena Bermúdez Sabel</name>
             </respStmt>
             <respStmt>
@@ -24,7 +23,7 @@
                <name>Helena Bermúdez Sabel</name>
             </respStmt>
             <respStmt>
-               <resp>Curation of the semantic annotation</resp>
+               <resp>Review and validation of the annotation</resp>
                <name>Francesca Dell’Oro</name>
             </respStmt>
          </editionStmt>
@@ -32,17 +31,26 @@
             <measure unit="words" quantity="11637"/>
          </extent>
          <publicationStmt>
-            <authority>Swiss National Science Foundation</authority>
+            <distributor>Institut des sciences du langage (University of Neuchâtel)</distributor>
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
                   BY-NC</licence>
             </availability>
+            <date>2022</date>
          </publicationStmt>
          <sourceDesc>
             <p>Text provided by Perseus Digital Library, with funding from The Mellon Foundation.
                Original version available for viewing and download at <ptr
-                  target="http://www.perseus.tufts.edu/hopper/"/>. Text retrieved from:
-               <bibl type="sourceEdition"><ptr target="http://data.perseus.org/texts/urn:cts:latinLit:stoa0203.stoa001"/></bibl></p>            
+                  target="http://www.perseus.tufts.edu/hopper/"/>. Text retrieved from: <bibl
+                  xml:id="sourceEdition"><ptr
+                     target="http://data.perseus.org/texts/urn:cts:latinLit:stoa0203.stoa001.perseus-lat1"
+                  /></bibl>. Original printed edition: <bibl><title>Tertullian Apology - De
+                     spectaculis - Minucius Felix Octavius</title>. Translated by T.R. Glover.
+                  William Heinemann. Harvard University Press: London; Cambridge, Massachusetts.
+                  1931.</bibl></p>
+            <p>Reference edition: <bibl xml:id="referenceEdition">Minucius Felix, Marcus.
+                     <title>Octavius</title>. Edited by Bernhard Kytzler.Bibliotheca scriptorum
+                  Graecorum et Romanorum Teubneriana. Berlin, Boston: De Gruyter. 1992</bibl>.</p>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
@@ -53,6 +61,19 @@
             <person role="author" corresp="#minucius"/>
          </particDesc>
       </profileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>The SNSF-funded project <ref target="https://woposs.unine.ch/">A world of
+                  possibilities. Modal pathways over an extra-long period of time: the diachrony of
+                  modality in the Latin language (WoPoss)</ref> (SNSF n° PP00P1_176778), led by
+               Francesca Dell’Oro, aims at reconstructing the evolution of modal meanings from the
+               prehistory of the Latin language up to the 7th century CE.</p>
+         </projectDesc>
+         <p>The project’s repository <ref
+               target="https://github.com/WoPoss-project/annotation-schemes"
+               >annotation-schemes</ref> contains documentation about the annotation process and all
+            our customized schemas (formalised in ODD and Relax-NG).</p>
+      </encodingDesc>
    </teiHeader>
    <text>
       <body>
@@ -1173,8 +1194,6 @@
                   </w>
                   <pc>,</pc>
                   <w pos="VERB" lemma="suspendo">suspensa</w>
-               </s>
-               <s n="56">
                   <w pos="ADV" lemma="magisque">magisque</w>
                   <w pos="ADJ" lemma="omnis">omnia</w>
                   <w pos="ADJ" lemma="verisimilis">verisimilia</w>
@@ -2500,8 +2519,6 @@
                   <w pos="NOUN" lemma="neminim">neminem</w>
                   <w pos="VERB" lemma="ferum">fero</w>
                   <w pos="ADJ" lemma="tantus">tanta</w>
-               </s>
-               <s n="124">
                   <w pos="NOUN" lemma="audacia">audacia</w>
                   <w pos="ADV" lemma="tamque">tamque</w>
                   <w pos="ADJ" lemma="inreligium">inreligiosa</w>
@@ -2524,8 +2541,6 @@
                   <w pos="VERB" lemma="dissolvo">dissolvere</w>
                   <w pos="CCONJ" lemma="aut">aut</w>
                   <w pos="VERB" lemma="infirmo">infirmare</w>
-               </s>
-               <s n="125">
                   <w pos="VERB" lemma="nitor">nitatur</w>
                   <pc>.</pc>
                </s>
@@ -14784,7 +14799,8 @@
                   <w pos="ADJ" lemma="omnis">Omnem</w>
                   <w pos="ADV" lemma="adeo">adeo</w>
                   <w pos="NOUN" lemma="mundus" msd="#oct2d1e30302">
-                     <seg function="participant" type="inanimate" corresp="#oct2349230">mundum</seg>
+                     <seg function="participant" type="inanimate" 
+                        corresp="#oct2349230">mundum</seg>
                   </w>
                   <pc>,</pc>
                   <w pos="SCONJ" lemma="si">si</w>
@@ -40457,7 +40473,7 @@
                <symbol value="inevitability"/>
             </f>
             <f name="note">
-               <string>The necessive meaning is probably bound to the conditional sentence.</string>
+               <string>The necessity meaning is probably bound to the conditional sentence.</string>
             </f>
          </fs>
 
